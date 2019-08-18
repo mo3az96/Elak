@@ -1,0 +1,222 @@
+.header {
+    background-image: linear-gradient(to right, #7dde9d, #17b7bd);
+    position: relative;
+    overflow: hidden;
+
+    .overlay {
+        background-image: url(../images/pattern.png);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+}
+
+.langbar-sec {
+    background-color: rgba(0, 0, 0, 0.122);
+    z-index: 5;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.langbar {
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    height: 36px;
+
+    img {
+        margin-left: 9px;
+        z-index: 5;
+    }
+
+    .lang {
+        color: #fff;
+        font-family: 'Cairo', sans-serif;
+        z-index: 5;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+    }
+}
+
+.sec-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 0 35px;
+
+    @media (max-width: 991px) {
+        flex-direction: column;
+        padding: 11px 0 15px;
+    }
+}
+
+.logo {
+    z-index: 5;
+
+    @media (max-width: 991px) {
+        order: 1;
+    }
+}
+
+.user-navbar {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 35px;
+    width: 290px;
+
+    @media (max-width: 991px) {
+        margin-top: 20px;
+        order: 2;
+        width: auto;
+        padding-left: 0;
+    }
+}
+
+.fav-icon {
+    margin: 0 25px;
+}
+
+.items {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14.4px;
+    @include transition(all 0.2s ease-in-out);
+}
+
+.shopcart-icon {
+    position: relative;
+}
+
+.user-icon {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        .drop-menu {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.drop-menu {
+    position: absolute;
+    width: 123px;
+    height: 74px;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+    z-index: 9;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2px 0 0;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(all 0.3s ease-in-out);
+    padding-top: 10px;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        display: block;
+        border-width: 6px;
+        border-color: transparent transparent #ffffff;
+        border-style: solid;
+        top: -12px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    li {
+        width: 100%;
+        border-bottom: 1px solid #ededed;
+        padding-bottom: 4px;
+        margin-bottom: 1px;
+
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: #535353;
+        font-size: 14px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+    }
+}
+
+.sign_div {
+    path {
+        @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+        path {
+            fill: $seccolor;
+        }
+
+    }
+}
+
+.menu-btn {
+    display: none;
+
+    @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        height: 25px;
+        justify-content: space-around;
+
+        span {
+            height: 2px;
+            width: 80%;
+            margin-bottom: 5px;
+            background-color: #fff;
+            margin-right: auto;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.search-icon {
+    display: none;
+
+    @media (max-width: 991px) {
+        display: block;
+        margin: 0 25px;
+    }
+}

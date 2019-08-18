@@ -1,0 +1,137 @@
+.cats-sec {
+    margin-top: 11px;
+
+    @media (max-width: 991px) {
+        margin-top: 40px;
+    }
+}
+
+.cats {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cat {
+    text-align: center;
+
+    a {
+
+        color: #6d6d6d;
+        font-size: 18px;
+        font-family: Frutiger-bold;
+        @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+        a {
+            color: #9f9e9e;
+        }
+    }
+}
+
+.cat-img {
+    width: 180px;
+    height: 181px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+    transition: .5s;
+    background-size: 100%;
+
+    &.cat1 {
+        background-image: linear-gradient(to right, #fca46e, #ee6176);
+    }
+
+    &.cat2 {
+        background-image: linear-gradient(to right, #7cde9d, #18b7bd);
+    }
+
+    &.cat3 {
+        background-image: linear-gradient(to right, #f99fab, #ee6277);
+    }
+
+    &.cat4 {
+        background-image: linear-gradient(to right, #83e9f0, #72cced);
+    }
+
+    &.cat5 {
+        background-image: linear-gradient(to right, #eff458, #ebcd3e);
+    }
+
+    &.cat6 {
+        background-image: linear-gradient(to right, #b080f4, #823fe4);
+    }
+
+    img {
+        @media (max-width: 1199px) {
+            width: auto !important;
+        }
+    }
+
+    &:hover {
+        background-size: 200%;
+    }
+
+    @media (max-width: 1199px) {
+        margin: 0 auto 13px;
+    }
+}
+
+.services {
+    background-image: linear-gradient(to right, #7dde9d, #17b7bd);
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0 70px;
+
+    @media (max-width: 991px) {
+        padding: 30px 0 30px;
+    }
+
+    .overlay {
+        background-image: url(../images/pattern.png);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+}
+
+.serv {
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+
+    @media (max-width: 991px) {
+        margin-bottom: 20px;
+    }
+}
+
+.serv-img {
+    width: 58px;
+    height: 58px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.serv-header {
+    font-size: 16px;
+    font-family: Frutiger-bold;
+    z-index: 5;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.serv-subheader {
+    font-size: 16px;
+    z-index: 5;
+}

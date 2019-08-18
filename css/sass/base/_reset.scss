@@ -1,0 +1,95 @@
+html {
+
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Frutiger;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        background-color: rgba(#535353, 0.2);
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(#49caad, 0.5);
+        border-radius: 25px;
+
+        &:hover {
+            background-color: rgba(#49caad, 1);
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba(#535353, 0.2);
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(#49caad, 0.7) rgba(#49caad, 0.2);
+}
+
+.container {
+    max-width: 1170px;
+
+}
+
+*[class*="col-"] {
+    z-index: 5;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+input,
+button,
+textarea,
+.btn {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}

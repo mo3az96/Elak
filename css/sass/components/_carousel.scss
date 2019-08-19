@@ -1,11 +1,11 @@
 .main-slider {
     max-width: 100%;
     max-height: 468px;
-    margin-top: 71px;
+    margin-top: 40px;
     overflow: hidden;
 
     @media (max-width: 991px) {
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .owl-stage-outer {

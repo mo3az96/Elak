@@ -393,6 +393,7 @@ html[dir=ltr] .news .news-btn {
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
+  z-index: 5;
 }
 @media (max-width: 991px) {
   .navbar-sec {

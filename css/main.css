@@ -987,7 +987,7 @@ html[dir=ltr] .moaccordion:after {
   left: 50%;
   top: 35px;
   transform: translateX(-50%);
-  z-index: 9;
+  z-index: 10;
   background-color: #fff;
   border-radius: 7px;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
@@ -1430,6 +1430,7 @@ html[dir=ltr] .moaccordion:after {
   .copyright {
     order: 2;
     margin-top: 15px;
+    flex-direction: column;
   }
 }
 .copyright img {

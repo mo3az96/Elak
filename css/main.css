@@ -549,7 +549,6 @@ html[dir=ltr] .xs-nav .main-nav {
   max-width: 100%;
   max-height: 468px;
   margin-top: 40px;
-  overflow: hidden;
 }
 @media (max-width: 991px) {
   .main-slider {

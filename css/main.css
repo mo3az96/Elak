@@ -562,7 +562,7 @@ html[dir=ltr] .xs-nav .main-nav {
 }
 @media (max-width: 991px) {
   .main-slider .owl-stage-outer {
-    border-radius: 7px;
+    border-radius: 8px;
   }
 }
 .main-slider .owl-nav {

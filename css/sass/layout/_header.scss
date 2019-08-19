@@ -48,6 +48,13 @@
     }
 }
 
+html[dir="ltr"] .langbar {
+    img {
+        margin-right: 9px;
+        margin-left: 0;
+    }
+}
+
 .sec-bar {
     display: flex;
     align-items: center;
@@ -83,6 +90,17 @@
         padding-left: 0;
     }
 }
+
+html[dir="ltr"] .user-navbar {
+    padding-left: 0;
+    padding-right: 35px;
+
+    @media (max-width: 991px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
 
 .fav-icon {
     margin: 0 25px;
@@ -207,6 +225,16 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+html [dir="ltr"] .menu-btn {
+    @media (max-width: 991px) {
+
+        span {
+            margin-right: 0;
+            margin-left: auto;
         }
     }
 }

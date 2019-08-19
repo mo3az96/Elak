@@ -164,6 +164,20 @@
     }
 }
 
+html[dir="ltr"] .follow {
+
+    .follow-head {
+        margin-left: 0;
+        margin-right: 14px;
+    }
+
+
+    .social {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+}
+
 .download {
     display: flex;
     align-items: center;
@@ -190,10 +204,25 @@
     }
 }
 
+html[dir="ltr"] .download {
+
+    .download-head {
+        margin-right: 14px;
+        margin-left: 0;
+    }
+}
+
 .apps {
     display: flex;
 }
 
+html[dir="ltr"] .apps {
+    a {
+        &:first-child {
+            margin-left: 5px;
+        }
+    }
+}
 
 .copyrights {
     min-height: 61px;
@@ -232,4 +261,13 @@
             order: 1;
         }
     }
+}
+
+html[dir="ltr"] .copyright {
+
+    img {
+        margin-right: 0;
+        margin-left: 6px;
+    }
+
 }

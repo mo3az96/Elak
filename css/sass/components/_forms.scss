@@ -84,6 +84,22 @@
 
 }
 
+html[dir="ltr"] .search {
+    padding-left: 25px;
+    padding-right: 0;
+
+    @media (max-width: 991px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .search-btn {
+        right: 6px;
+        left: auto;
+    }
+}
+
+
 
 .news {
     height: 35px;
@@ -144,6 +160,13 @@
     }
 }
 
+html[dir="ltr"] .news {
+
+    .news-btn {
+        left: auto;
+        right: 15px;
+    }
+}
 
 .search-pop {
     display: none;

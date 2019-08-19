@@ -61,6 +61,27 @@
     }
 }
 
+html[dir="ltr"] .navlink-li {
+    margin-left: 0;
+    margin-right: 27px;
+
+    &:last-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (max-width: 1199px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (max-width: 991px) {
+        margin-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 0;
+    }
+}
+
 .navlink {
     color: #6d6d6d;
     font-size: 16px;

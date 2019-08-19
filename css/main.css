@@ -283,6 +283,21 @@ h4 {
   fill: #f58272;
 }
 
+html[dir=ltr] .search {
+  padding-left: 25px;
+  padding-right: 0;
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .search {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+html[dir=ltr] .search .search-btn {
+  right: 6px;
+  left: auto;
+}
+
 .news {
   height: 35px;
   width: 100%;
@@ -336,6 +351,11 @@ h4 {
 }
 .news .news-btn:hover path {
   fill: #f58272;
+}
+
+html[dir=ltr] .news .news-btn {
+  left: auto;
+  right: 15px;
 }
 
 .search-pop {
@@ -433,6 +453,28 @@ h4 {
   .navlink-li {
     margin-bottom: 15px;
     padding-right: 15px;
+  }
+}
+
+html[dir=ltr] .navlink-li {
+  margin-left: 0;
+  margin-right: 27px;
+}
+html[dir=ltr] .navlink-li:last-child {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 1199px) {
+  html[dir=ltr] .navlink-li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .navlink-li {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 0;
   }
 }
 
@@ -915,6 +957,11 @@ html[dir=ltr] .moaccordion:after {
   color: #f58272;
 }
 
+html[dir=ltr] .langbar img {
+  margin-right: 9px;
+  margin-left: 0;
+}
+
 .sec-bar {
   display: flex;
   align-items: center;
@@ -950,6 +997,17 @@ html[dir=ltr] .moaccordion:after {
     margin-top: 20px;
     order: 2;
     width: auto;
+    padding-left: 0;
+  }
+}
+
+html[dir=ltr] .user-navbar {
+  padding-left: 0;
+  padding-right: 35px;
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .user-navbar {
+    padding-right: 0;
     padding-left: 0;
   }
 }
@@ -1075,6 +1133,13 @@ html[dir=ltr] .moaccordion:after {
   }
   .menu-btn span:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  html [dir=ltr] .menu-btn span {
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 
@@ -1382,6 +1447,15 @@ html[dir=ltr] .moaccordion:after {
   }
 }
 
+html[dir=ltr] .follow .follow-head {
+  margin-left: 0;
+  margin-right: 14px;
+}
+html[dir=ltr] .follow .social {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
 .download {
   display: flex;
   align-items: center;
@@ -1408,8 +1482,17 @@ html[dir=ltr] .moaccordion:after {
   }
 }
 
+html[dir=ltr] .download .download-head {
+  margin-right: 14px;
+  margin-left: 0;
+}
+
 .apps {
   display: flex;
+}
+
+html[dir=ltr] .apps a:first-child {
+  margin-left: 5px;
 }
 
 .copyrights {
@@ -1451,6 +1534,11 @@ html[dir=ltr] .moaccordion:after {
   .copyright .payment {
     order: 1;
   }
+}
+
+html[dir=ltr] .copyright img {
+  margin-right: 0;
+  margin-left: 6px;
 }
 
 /*# sourceMappingURL=main.css.map */

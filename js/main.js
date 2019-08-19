@@ -6,12 +6,14 @@ $(document).ready(function () {
         $('.main-xs-nav').addClass('inscreen');
         $('.main-xs-nav').removeClass('outscreen');
         $('body').css("overflow", "hidden");
+        $('html').css("overflow", "hidden");
     });
     $('.xs-nav').click(function () {
         $('.xs-nav').fadeOut(500);
         $('.main-xs-nav').addClass('outscreen');
         $('.main-xs-nav').removeClass('inscreen');
         $('body').css("overflow", "auto");
+        $('html').css("overflow", "auto");
     });
     $(".nav-links").click(function (e) {
         e.stopPropagation();
@@ -20,10 +22,12 @@ $(document).ready(function () {
     $('.search-icon').click(function () {
         $('.search-pop').fadeIn(500);
         $('body').css("overflow", "hidden");
+        $('html').css("overflow", "hidden");
     });
     $('.search-pop').click(function () {
         $('.search-pop').fadeOut(500);
         $('body').css("overflow", "auto");
+        $('html').css("overflow", "auto");
     });
     $(".search").click(function (e) {
         e.stopPropagation();

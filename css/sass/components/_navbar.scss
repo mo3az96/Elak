@@ -1,4 +1,8 @@
 .navbar-sec {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+
     @media (max-width: 991px) {
         display: none;
     }
@@ -75,7 +79,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($maincolor, 0.75);
+    background-color: rgba(#535353, 0.75);
     z-index: 9;
 
     .main-xs-nav {

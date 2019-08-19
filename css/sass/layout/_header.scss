@@ -1,7 +1,6 @@
 .header {
     background-image: linear-gradient(to right, #7dde9d, #17b7bd);
     position: relative;
-    overflow: hidden;
 
     .overlay {
         background-image: url(../images/pattern.png);
@@ -53,7 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 21px 0 35px;
+    padding: 21px 0 50px;
 
     @media (max-width: 991px) {
         flex-direction: column;

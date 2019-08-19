@@ -591,6 +591,7 @@ html[dir=ltr] .xs-nav .main-nav {
 }
 .main-slider .owl-nav [class*=owl-] i:hover {
   background-color: #49caad;
+  color: #fff;
 }
 .main-slider .owl-nav .owl-next i {
   left: -47px;

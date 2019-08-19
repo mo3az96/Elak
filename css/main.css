@@ -580,7 +580,7 @@ html[dir=ltr] .xs-nav .main-nav {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: rgba(235, 235, 235, 0.5);
+  background-color: #ebebeb;
   color: #b7b7b7;
   position: absolute;
   font-size: 12px;

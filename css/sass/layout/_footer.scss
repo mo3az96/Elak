@@ -218,8 +218,8 @@ html[dir="ltr"] .download {
 
 html[dir="ltr"] .apps {
     a {
-        &:first-child {
-            margin-left: 5px;
+        &:last-child {
+            margin-left: 4px;
         }
     }
 }

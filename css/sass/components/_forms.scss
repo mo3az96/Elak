@@ -39,9 +39,9 @@
             width: 100%;
             background-color: transparent;
             z-index: 5;
-            color: #bbbbbb;
+            color: #535353;
             font-size: 14px;
-            border-bottom: 1px solid rgba(#e0e0e0, 0.302);
+            border-bottom: 1px solid rgba(#535353, 0.702);
             @include transition(all 0.3s ease-in-out);
             padding: 0 10px;
         }
@@ -52,16 +52,16 @@
             font-size: 15px;
 
             @media (max-width: 991px) {
-                color: #bbbbbb;
+                color: #535353;
                 font-size: 14px;
             }
         }
 
         &:hover {
-            border-bottom: 1px solid rgba(#fff, 0.302);
+            border-bottom: 1px solid rgba(#fff, 0.702);
 
             @media (max-width: 991px) {
-                border-bottom: 1px solid rgba(#e0e0e0, 0.302);
+                border-bottom: 1px solid rgba(#535353, 0.702);
             }
         }
 
@@ -69,7 +69,7 @@
             border-bottom: 1px solid rgba(#fff, 1);
 
             @media (max-width: 991px) {
-                border-bottom: 1px solid rgba(#e0e0e0, 1);
+                border-bottom: 1px solid rgba(#535353, 1);
             }
         }
     }
@@ -212,7 +212,7 @@ html[dir="ltr"] .news {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #535353;
+        background-color: transparent;
         border-radius: 50%;
         line-height: 25px;
         padding-top: 8px;
@@ -221,7 +221,7 @@ html[dir="ltr"] .news {
             width: 60%;
             top: 10px;
             height: 2px;
-            background-color: #fff;
+            background-color: #ccc;
             transform: rotate(-45deg);
             position: absolute;
 

@@ -78,7 +78,7 @@ html[dir="ltr"] .navlink-li {
 
     @media (max-width: 991px) {
         margin-bottom: 15px;
-        padding-left: 15px;
+        padding-left: 25px;
         padding-right: 0;
     }
 }
@@ -101,7 +101,7 @@ html[dir="ltr"] .navlink-li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(#fff, 0.75);
+    background-color: rgba(#6d6d6d, 0.75);
     z-index: 9;
 
     .main-xs-nav {
@@ -116,25 +116,20 @@ html[dir="ltr"] .navlink-li {
         text-align: right;
     }
 
-    .lang-xs {
+    .lang {
         position: absolute;
         position: absolute;
         top: 25px;
         cursor: pointer;
-        right: 0px;
-        width: 30px;
-        height: 25px;
-        background-color: #6d6d6d;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
+        right: 25px;
         display: flex;
         align-items: center;
+        color: #ccc;
         justify-content: center;
-
-        a {
-            color: #fff;
-        }
     }
+
+
+
 
 
     .closebtn {
@@ -179,15 +174,9 @@ html[dir="ltr"] .navlink-li {
 
 html[dir="ltr"] .xs-nav {
 
-    .lang-xs {
+    .lang {
         right: auto;
-        left: 0px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-        align-items: flex-start;
-        line-height: 20px
+        left: 25px;
     }
 
     .closebtn {

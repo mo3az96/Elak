@@ -364,7 +364,7 @@ html[dir=ltr] .news .news-btn {
   height: 100%;
   position: fixed;
   justify-content: center;
-  background-color: rgba(83, 83, 83, 0.97);
+  background-color: rgba(16, 16, 16, 0.97);
   z-index: 9999;
   left: 0;
   top: 0;
@@ -516,7 +516,7 @@ html[dir=ltr] .navlink-li:last-child {
 .xs-nav .closebtn {
   position: absolute;
   top: 25px;
-  font-size: 15px;
+  width: 20px;
   cursor: pointer;
   left: 0px;
   margin-left: 25px;
@@ -874,6 +874,74 @@ html[dir=ltr] .xs-nav .main-nav {
   font-family: Frutiger-bold;
 }
 
+.cats .owl-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .cats .owl-dots {
+    bottom: -25px;
+  }
+}
+.cats .owl-dots .owl-dot.active span {
+  background-color: #49caad;
+  background: #49caad;
+  opacity: 1;
+}
+.cats .owl-dots .owl-dot span {
+  border-radius: 40%;
+  background-color: #000000;
+  background: #000000;
+  opacity: 0.502;
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cats .owl-dots .owl-dot span:hover {
+  background-color: #49caad;
+  background: #49caad;
+  opacity: 1;
+}
+
+.Product-slider .owl-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .Product-slider .owl-dots {
+    bottom: -25px;
+  }
+}
+.Product-slider .owl-dots .owl-dot.active span {
+  background-color: #49caad;
+  background: #49caad;
+  opacity: 1;
+}
+.Product-slider .owl-dots .owl-dot span {
+  border-radius: 40%;
+  background-color: #000000;
+  background: #000000;
+  opacity: 0.502;
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.Product-slider .owl-dots .owl-dot span:hover {
+  background-color: #49caad;
+  background: #49caad;
+  opacity: 1;
+}
+
 .moaccordion {
   cursor: pointer;
   width: 100%;
@@ -1033,6 +1101,7 @@ html[dir=ltr] .user-navbar {
 
 .shopcart-icon {
   position: relative;
+  cursor: pointer;
 }
 
 .user-icon {
@@ -1103,16 +1172,6 @@ html[dir=ltr] .user-navbar {
 }
 .drop-menu a:hover {
   color: #f58272;
-}
-
-.sign_div path {
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.sign_div:hover path {
-  fill: #f58272;
 }
 
 .menu-btn {

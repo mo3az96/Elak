@@ -119,6 +119,7 @@ html[dir="ltr"] .user-navbar {
 
 .shopcart-icon {
     position: relative;
+    cursor: pointer;
 }
 
 .user-icon {
@@ -190,19 +191,6 @@ html[dir="ltr"] .user-navbar {
         &:hover {
             color: $seccolor;
         }
-    }
-}
-
-.sign_div {
-    path {
-        @include transition(all 0.3s ease-in-out);
-    }
-
-    &:hover {
-        path {
-            fill: $seccolor;
-        }
-
     }
 }
 

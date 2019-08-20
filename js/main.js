@@ -64,6 +64,7 @@ $(document).ready(function () {
     $('.Product-slider').owlCarousel({
         items: 5,
         autoplay: true,
+        autoplayTimeout: 5000,
         margin: 16,
         rtl: true,
         loop: true,
@@ -76,10 +77,12 @@ $(document).ready(function () {
             0: {
                 items: 1,
                 nav: false,
+                dots: true,
             },
             500: {
                 items: 2,
                 nav: false,
+                dots: true,
 
             },
             768: {
@@ -118,10 +121,12 @@ $(document).ready(function () {
     /////////////////////////////////////
     if ($(window).width() < 1200) {
         $(".cats").addClass("owl-carousel");
+        $(".cats").addClass("owl-theme");
         $('.cats').owlCarousel({
             items: 1,
             margin: 10,
             autoplay: true,
+            autoplayTimeout: 2500,
             rtl: true,
             loop: true,
             nav: false,
@@ -129,15 +134,19 @@ $(document).ready(function () {
             responsive: {
                 0: {
                     items: 1,
+                    dots: true,
                 },
                 480: {
                     items: 2,
+                    dots: true,
                 },
                 767: {
                     items: 3,
+                    dots: true,
                 },
                 992: {
                     items: 5,
+                    dots: true,
                 },
 
             }

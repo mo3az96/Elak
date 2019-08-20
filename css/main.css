@@ -293,6 +293,22 @@ html[dir=ltr] .search {
     padding-left: 0;
   }
 }
+html[dir=ltr] .search .search-input {
+  color: #eee;
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .search .search-input {
+    color: #fff;
+  }
+}
+html[dir=ltr] .search .search-input::placeholder {
+  color: #eee;
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .search .search-input::placeholder {
+    color: #fff;
+  }
+}
 html[dir=ltr] .search .search-btn {
   right: 6px;
   left: auto;

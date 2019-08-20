@@ -93,6 +93,22 @@ html[dir="ltr"] .search {
         padding-left: 0;
     }
 
+    .search-input {
+        color: #eee;
+
+        @media (max-width: 991px) {
+            color: #fff;
+        }
+
+        &::placeholder {
+            color: #eee;
+
+            @media (max-width: 991px) {
+                color: #fff;
+            }
+        }
+    }
+
     .search-btn {
         right: 6px;
         left: auto;

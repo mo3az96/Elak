@@ -5,7 +5,7 @@ $(document).ready(function () {
         $('.xs-nav').show();
         $('.main-xs-nav').addClass('inscreen');
         $('.main-xs-nav').removeClass('outscreen');
-        $('body').css("overflow", "hidden");
+        $('.page-body').css("overflow", "hidden");
         $('html').css("overflow", "hidden");
     });
     $('.xs-nav').click(function () {
@@ -15,7 +15,7 @@ $(document).ready(function () {
         $('body').css("overflow", "auto");
         $('html').css("overflow", "auto");
     });
-    $(".nav-links").click(function (e) {
+    $(".main-xs-nav").click(function (e) {
         e.stopPropagation();
     });
     // Mobile Search 
@@ -45,6 +45,12 @@ $(document).ready(function () {
         loop: true,
         nav: true,
         dots: true,
+
+        thumbs: true,
+        thumbImage: true,
+        thumbsPrerendered: true,
+        thumbContainerClass: 'owl-thumbs',
+        thumbItemClass: 'owl-thumb-item',
         navText: ["<i class='fas fa-chevron-right'></i>", "<i class='fas fa-chevron-left'></i>"],
         responsive: {
             0: {
